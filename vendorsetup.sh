@@ -39,3 +39,14 @@ git clone -b 11.0 https://github.com/begonia-dev/android_device_mediatek_sepolic
 echo 'Fetching MTK FM Radio'
 git clone -b lineage-18.1 https://github.com/Mediatek-OSS/android_packages_apps_MtkFMRadio \
     packages/apps/MtkFMRadio
+
+# Auto-patch notice
+echo -e "
+/---------------------------------\\
+| [ ! ] IMPORTANT                 |
+|                                 |
+|      Don't forget to run        |
+|         'autopatch.sh'          |
+|                                 |
+| (should be executed only once!) |
+\\---------------------------------/"
