@@ -54,12 +54,6 @@
    "remote": "github"
  },
  {
-   "repository": "TTTT555/vendor_JamesDSPManager",
-   "target_path": "vendor/JamesDSPManager",
-   "branch": "main",   
-   "remote": "github"
- },
- {
    "repository": "TTTT555/vendor_dlb",
    "target_path": "vendor/dlb",
    "branch": "main",   

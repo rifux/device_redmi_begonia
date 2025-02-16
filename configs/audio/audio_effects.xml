@@ -23,7 +23,6 @@
         <library name="loudness_enhancer" path="libldnhncr.so"/>
         <library name="dynamics_processing" path="libdynproc.so"/>
         <library name="dirac" path="libdirac.so"/>
-        <library name="jdsp" path="libjamesdsp.so"/>
         <library name="dsplus" path="libdseffect.so"/>
     </libraries>
 
