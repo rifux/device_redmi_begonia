@@ -266,62 +266,6 @@ if [ "$usb_old" != "$usb" ]; then
 	usb_old=$usb
 fi
 
-## Viper
-viper="$(getprop persist.xp.viper)"
-if [ "$viper_old" != "$viper" ]; then
-  case $viper in
-  0)# Off
-  pm disable com.pittvandewitt.viperfx
-  ;;
-  1)# On
-  pm enable com.pittvandewitt.viperfx
-  ;;
-  *)# Other (disable)
-  pm disable com.pittvandewitt.viperfx
-  ;;
-  esac
-	viper_old=$viper
-fi
-
-## James
-james="$(getprop persist.xp.james)"
-if [ "$james_old" != "$james" ]; then
-  case $james in
-  0)# Off
-  stop audioserver
-  pm disable james.dsp && am force-stop james.dsp
-  sleep 2
-  ;;
-  1)# On
-  settings put global hidden_api_policy 1
-  pm enable james.dsp
-  ;;
-  *)# Other (disable)
-  stop audioserver
-  pm disable james.dsp && am force-stop james.dsp
-  sleep 2
-  ;;
-  esac
-	james_old=$james
-fi
-
-## Dlb
-dlb="$(getprop persist.xp.dlb)"
-if [ "$dlb_old" != "$dlb" ]; then
-  case $dlb in
-  0)# Off
-  pm disable com.dolby && pm disable com.dolby.ds1appUI
-  ;;
-  1)# On
-  pm enable com.dolby && pm enable com.dolby.ds1appUI
-  ;;
-  *)# Other (disable)
-  pm disable com.dolby && pm disable com.dolby.ds1appUI
-  ;;
-  esac
-	dlb_old=$dlb
-fi
-
 ## GMS IOS disabler
 gms="$(getprop persist.xp.gms)"
 if [ "$gms_old" != "$gms" ]; then
