@@ -49,7 +49,6 @@ fi
 pq_old=10
 usb_old=10
 governor_old=10
-thermal_old=10
 
 viper_old="$(getprop persist.xp.viper)"
 if [[ "$viper_old" != 0 && "$viper_old" != 1 ]]; then
@@ -336,23 +335,6 @@ if [ "$dlb_old" != "$dlb" ]; then
   ;;
   esac
 	dlb_old=$dlb
-fi
-
-## MI Thermal disabler
-thermal="$(getprop persist.xp.thermal)"
-if [ "$thermal_old" != "$thermal" ]; then
-  case $thermal in
-  0)# Enabled
-  start mi_thermald
-  ;;
-  1)# Disabled
-  stop mi_thermald
-  ;;
-  *)# First boot params (Enabled)
-  start mi_thermald
-  ;;
-  esac
-	thermal_old=$thermal
 fi
 
 ## GMS IOS disabler

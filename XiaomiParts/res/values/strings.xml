@@ -205,11 +205,6 @@
     <string name="usb_summary">Enable 900 mA USB charging</string>
     <string name="usb_dialogTitle">Enable 900 mA USB charging</string>
 
-    <!-- MI Thermal -->
-    <string name="thermal_title">Disable MI Thermal</string>
-    <string name="thermal_summary">It can improve performance but reduce device life.</string>
-    <string name="thermal_dialogTitle">It can improve performance but reduce device life.</string>
-
     <!-- GMS IOS -->
     <string name="gms_title">Disable Gms Intent Operation Service</string>
     <string name="gms_summary">Switch if you have battery drain issues from Google services. Can break authorization in Google.</string>

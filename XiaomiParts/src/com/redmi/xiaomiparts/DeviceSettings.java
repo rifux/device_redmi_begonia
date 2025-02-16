@@ -231,11 +231,6 @@ public class DeviceSettings extends PreferenceFragment implements
     mDlb.setChecked(FileUtils.getProp(DLB_SYSTEM_PROPERTY, false));
     mDlb.setOnPreferenceChangeListener(this);
 
-    // MI Thermal
-    mThermal = (SecureSettingSwitchPreference) findPreference(PREF_THERMAL);
-    mThermal.setChecked(FileUtils.getProp(THERMAL_SYSTEM_PROPERTY, false));
-    mThermal.setOnPreferenceChangeListener(this);
-
     // Google IOS
     mGms = (SecureSettingSwitchPreference) findPreference(PREF_GMS);
     mGms.setChecked(FileUtils.getProp(GMS_SYSTEM_PROPERTY, false));
@@ -357,10 +352,6 @@ public class DeviceSettings extends PreferenceFragment implements
 
             case PREF_DLB:
                 FileUtils.setProp(DLB_SYSTEM_PROPERTY, (Boolean) value);
-                break;
-
-            case PREF_THERMAL:
-                FileUtils.setProp(THERMAL_SYSTEM_PROPERTY, (Boolean) value);
                 break;
 
             case PREF_GMS:

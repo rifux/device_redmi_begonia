@@ -139,15 +139,7 @@
 			android:summary="@string/usb_summary"
 			android:dialogTitle="@string/usb_dialogTitle" />
 
-        <com.redmi.xiaomiparts.preferences.SecureSettingSwitchPreference
-            android:defaultValue="0"
-            android:key="thermal"
-            android:icon="@drawable/ic_thermal"
-            android:title="@string/thermal_title"
-			android:summary="@string/thermal_summary"
-			android:dialogTitle="@string/thermal_dialogTitle" />
-
-        <com.redmi.xiaomiparts.preferences.SecureSettingSwitchPreference
+        <com.redmi.xiaomiparts.preferences.SecureSettingListPreference
             android:defaultValue="0"
             android:key="gms"
             android:icon="@drawable/ic_gms"
