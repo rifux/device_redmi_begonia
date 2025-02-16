@@ -33,7 +33,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     af.fast_track_multiplier=1 \
     audio.adm.buffering.ms=3 \
     audio_hal.period_multiplier=2 \
-    sys.keep_app_1=com.dolby.ds1appUI \
     debug.mediatek.disp_decompress=1 \
     debug.mediatek.game_pq_enable=1 \
     debug.mtk_tflite.target_nnapi=29 \
