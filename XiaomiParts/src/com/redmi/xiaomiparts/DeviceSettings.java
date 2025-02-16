@@ -45,9 +45,6 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_VIPER = "viper";
     public static final String VIPER_SYSTEM_PROPERTY = "persist.xp.viper";
 
-    public static final String PREF_JAMES = "james";
-    public static final String JAMES_SYSTEM_PROPERTY = "persist.xp.james";
-
     public static final String PREF_DLB = "dlb";
     public static final String DLB_SYSTEM_PROPERTY = "persist.xp.dlb";
 

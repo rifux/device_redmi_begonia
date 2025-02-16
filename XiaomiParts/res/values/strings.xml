@@ -112,12 +112,6 @@
     <string name="viper_summary">Enable Viper Sound Enhancer. Also do not forget enable legacy mode in app settings.</string>
     <string name="viper_dialogTitle">Enable Viper Sound Enhancer. Also do not forget enable legacy mode in app settings.</string>
 
-
-    <!-- James DSP -->
-    <string name="james_title">James DSP</string>
-    <string name="james_summary">Enable James DSP Audio Manager. Reenable Dirac when you off this.</string>
-    <string name="james_dialogTitle">Enable James DSP Audio Manager. Reenable Dirac when you off this.</string>
-
     <!-- Dlb -->
     <string name="dlb_title">DB FX</string>
     <string name="dlb_summary">Enable DB FX Manager</string>

@@ -55,11 +55,6 @@ if [[ "$viper_old" != 0 && "$viper_old" != 1 ]]; then
   pm disable com.pittvandewitt.viperfx
 fi
 
-james_old="$(getprop persist.xp.james)"
-if [[ "$james_old" != 0 && "$james_old" != 1 ]]; then
-  pm disable james.dsp && am force-stop james.dsp
-fi
-
 dlb_old="$(getprop persist.xp.dlb)"
 if [[ "$dlb_old" != 0 && "$dlb_old" != 1 ]]; then
   pm disable com.dolby && pm disable com.dolby.ds1appUI
