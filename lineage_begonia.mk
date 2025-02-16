@@ -23,7 +23,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
 
 # Inherit some custom stuff
-$(call inherit-product, vendor/viper4androidFX/config.mk)
 $(call inherit-product, vendor/dirac/config.mk)
 $(call inherit-product, vendor/ANXCamera/config.mk)
 $(call inherit-product, vendor/burial8/config.mk)
