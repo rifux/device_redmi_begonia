@@ -50,11 +50,6 @@ pq_old=10
 usb_old=10
 governor_old=10
 
-viper_old="$(getprop persist.xp.viper)"
-if [[ "$viper_old" != 0 && "$viper_old" != 1 ]]; then
-  pm disable com.pittvandewitt.viperfx
-fi
-
 cam_old=10
 
 gms_old=10

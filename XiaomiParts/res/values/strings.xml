@@ -107,11 +107,6 @@
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
 
-    <!-- Viper FX -->
-    <string name="viper_title">ViPER4Android FX</string>
-    <string name="viper_summary">Enable Viper Sound Enhancer. Also do not forget enable legacy mode in app settings.</string>
-    <string name="viper_dialogTitle">Enable Viper Sound Enhancer. Also do not forget enable legacy mode in app settings.</string>
-
     <!-- Ambient gesture haptic feedback -->
     <string name="ambient_gesture_haptic_feedback">Haptic feedback</string>
     <string name="ambient_gesture_haptic_feedback_summary">Vibrate when a Ambient gesture is detected</string>
