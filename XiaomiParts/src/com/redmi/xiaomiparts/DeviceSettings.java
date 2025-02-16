@@ -65,9 +65,6 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_USB = "usb";
     public static final String USB_SYSTEM_PROPERTY = "persist.xp.usb";
 
-    public static final String PREF_THERMAL = "thermal";
-    public static final String THERMAL_SYSTEM_PROPERTY = "persist.xp.thermal";
-
     public static final String PREF_GMS = "gms";
     public static final String GMS_SYSTEM_PROPERTY = "persist.xp.gms";
 
@@ -102,8 +99,6 @@ public class DeviceSettings extends PreferenceFragment implements
     private SecureSettingListPreference mWiFi80;
 
     private SecureSettingSwitchPreference mUsb;
-
-    private SecureSettingSwitchPreference mThermal;
 
     private SecureSettingSwitchPreference mGms;
 
@@ -199,21 +194,6 @@ public class DeviceSettings extends PreferenceFragment implements
     mUsb = (SecureSettingSwitchPreference) findPreference(PREF_USB);
     mUsb.setChecked(FileUtils.getProp(USB_SYSTEM_PROPERTY, false));
     mUsb.setOnPreferenceChangeListener(this);
-
-    // Viper
-    mViper = (SecureSettingSwitchPreference) findPreference(PREF_VIPER);
-    mViper.setChecked(FileUtils.getProp(VIPER_SYSTEM_PROPERTY, false));
-    mViper.setOnPreferenceChangeListener(this);
-
-    // James
-    mJames = (SecureSettingSwitchPreference) findPreference(PREF_JAMES);
-    mJames.setChecked(FileUtils.getProp(JAMES_SYSTEM_PROPERTY, false));
-    mJames.setOnPreferenceChangeListener(this);
-
-    // Dlb
-    mDlb = (SecureSettingSwitchPreference) findPreference(PREF_DLB);
-    mDlb.setChecked(FileUtils.getProp(DLB_SYSTEM_PROPERTY, false));
-    mDlb.setOnPreferenceChangeListener(this);
 
     // Google IOS
     mGms = (SecureSettingSwitchPreference) findPreference(PREF_GMS);
