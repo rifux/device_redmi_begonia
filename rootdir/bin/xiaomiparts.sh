@@ -55,11 +55,6 @@ if [[ "$viper_old" != 0 && "$viper_old" != 1 ]]; then
   pm disable com.pittvandewitt.viperfx
 fi
 
-dlb_old="$(getprop persist.xp.dlb)"
-if [[ "$dlb_old" != 0 && "$dlb_old" != 1 ]]; then
-  pm disable com.dolby && pm disable com.dolby.ds1appUI
-fi
-
 cam_old=10
 
 gms_old=10

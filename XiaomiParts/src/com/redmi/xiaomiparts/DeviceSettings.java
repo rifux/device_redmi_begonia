@@ -45,9 +45,6 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_VIPER = "viper";
     public static final String VIPER_SYSTEM_PROPERTY = "persist.xp.viper";
 
-    public static final String PREF_DLB = "dlb";
-    public static final String DLB_SYSTEM_PROPERTY = "persist.xp.dlb";
-
     public static final String KEY_VIBSTRENGTH = "vibration_strength";
     private static final String CATEGORY_DISPLAY = "display";
 
@@ -101,8 +98,6 @@ public class DeviceSettings extends PreferenceFragment implements
     private SecureSettingSwitchPreference mViper;
 
     private SecureSettingSwitchPreference mJames;
-
-    private SecureSettingSwitchPreference mDlb;
 
     private SecureSettingListPreference mGovernor;
 
@@ -341,14 +336,6 @@ public class DeviceSettings extends PreferenceFragment implements
 
             case PREF_VIPER:
                 FileUtils.setProp(VIPER_SYSTEM_PROPERTY, (Boolean) value);
-                break;
-
-            case PREF_JAMES:
-                FileUtils.setProp(JAMES_SYSTEM_PROPERTY, (Boolean) value);
-                break;
-
-            case PREF_DLB:
-                FileUtils.setProp(DLB_SYSTEM_PROPERTY, (Boolean) value);
                 break;
 
             case PREF_GMS:

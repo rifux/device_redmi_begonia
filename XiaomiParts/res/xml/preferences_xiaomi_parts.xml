@@ -53,14 +53,6 @@
             android:title="@string/viper_title"
 			android:summary="@string/viper_summary"
 			android:dialogTitle="@string/viper_dialogTitle" />
-            
-        <com.redmi.xiaomiparts.preferences.SecureSettingSwitchPreference
-            android:defaultValue="0"
-            android:key="dlb"
-            android:icon="@drawable/ic_dlb"
-            android:title="@string/dlb_title"
-			android:summary="@string/dlb_summary"
-			android:dialogTitle="@string/dlb_dialogTitle" />
     </PreferenceCategory>
     
     <PreferenceCategory
